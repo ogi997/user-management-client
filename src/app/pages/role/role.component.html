@@ -1,0 +1,24 @@
+<div class="my-20 rounded-md p-5">
+  <h1 class="text-2xl font-semibold">Role managment</h1>
+  <hr class="my-3" />
+
+  <div class="flex flex-row justify-center">
+    <div class="col-span-6">
+      <app-role-form
+        [errorMessage]="errorMessage"
+        (addRole)="createRole($event)"
+        [role]="role"
+      />
+    </div>
+
+    <div class="col-span-6">
+      <app-role-assign [roles]="roles$ | async" (updateRoleOutput)="updateRole()" />
+    </div>
+  </div>
+  <div class="col-span-12">
+    <app-role-list
+      [roles]="roles$ | async"
+      (deleteRoleOutput)="deleteRole($event)"
+    />
+  </div>
+</div>
