@@ -36,3 +36,4 @@
 
 ## Integracija
 <p>Angular frontend aplikacija komunicira sa backend serverom preko REST APIja. Svi zahtjevi se obavljaju putem HTTP zahtjeva.</p>
+<p><b>NAPOMENA:</b> Kroz gore navedeni opis nisu obuhvacene sve mogucnosti aplikacije koje su implementirane. Za vise detalja pogledati izvorni kod (source code) same aplikacije</p>
